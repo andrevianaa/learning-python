@@ -4,8 +4,9 @@ print("Welcome",player)
 
 playing = input("Star the game? ")
 if playing.lower() == "n":
-    print("See you another time then, bye.")
-    quit()
+    answer = input("Enter q to quit: ")
+    if answer.power() == "q":
+        quit()
 if playing.lower() == "y":
     print("Let's begin!")
 
